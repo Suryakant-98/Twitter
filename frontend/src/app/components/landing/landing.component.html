@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>        
+      
+    <meta charset="utf-8">
+              
+    <title>Twitter.</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        color: black;
+        background-color: black;        
+      }
+
+      .split {
+        height: 90%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;        
+      }
+
+      .left {
+        left: 0;
+        background-color: #1DA1F2;
+        color: white;
+        line-height: 40px;
+        font-size: 79.9%;
+        overflow: hidden;        
+      }
+
+      .right {
+        right: 0;
+        background-color: black;
+        color: white;        
+      }
+
+      .centered-left {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: left;        
+      }
+
+      .centered-right {
+        position: relative;
+        top: 80px;
+        left: 160px;
+        text-align: left;      
+      }
+  
+      footer {
+        width: 100%;
+        height: 30%;
+        z-index: 3;
+        font-size: 12px;
+        word-spacing: 8px;
+        color: #B1D0EA;
+        position: relative;
+        text-align: center;
+        top: 595px;
+      }
+        
+      .footer-color {
+        color: #B1D0EA;
+        text-decoration: none;
+      }
+        
+      h2 {
+        z-index: 4;         
+      }
+
+      .copy{
+        word-spacing: .8px;        
+      }
+
+      form{
+        position: relative;
+        top: 10px;
+        left: 138px;
+        word-spacing: 8px;        
+      }
+
+      #login-button1 {
+        background-color: transparent;
+        border: 1px solid #1DA1F2;
+        border-radius: 42%;
+        color: #1DA1F2;
+        padding: 9px 7px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        box-sizing: border-box;
+        top: 200px;
+      }
+      
+      .login-button {
+        background-color: transparent;
+        border: 1px solid #1DA1F2;
+        border-radius: 22px;
+        color: white;
+        padding: 9px 7px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        width: 338px;        
+      }
+
+      #loginlast{
+        background-color: transparent;        
+      }
+
+      .login-button:hover, #loginlast:hover {
+          background-color: #1DA1F2;
+      }
+
+      .button{
+        background-color: #12171D;
+        width: 160px;
+        height: 30px;
+        text-align: left;
+        border: .9px solid #4B555E;        
+      }
+
+      #twitterIcon-bird{
+        position: relative;
+        bottom: 180px;
+        left: 35px;
+        right: 10px;
+        width: 90vw;        
+      }
+
+      #forgot {
+        color: grey;
+        font-size: 14px;
+        position: relative;
+        left: 312px;
+        text-decoration: none;
+        padding-top: none;        
+      }
+
+      #right-bird {
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        top: 78px;
+        left: 160px; 
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="split left">
+      <svg id="twitterIcon-bird" viewBox="0 0 1208 982" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Artboard" transform="translate(-286.000000, -117.000000)" fill-rule="nonzero" fill="#1B95E0">
+          <path d="M1493.75308,233.195911 C1449.31783,252.922544 1401.56126,266.207828 1351.43951,272.19627 C1402.61804,241.549536 1441.92034,192.987798 1460.3889,135.116296 C1412.53168,163.498493 1359.49119,184.130942 1303.02874,195.252335 C1257.88897,147.093181 1193.42514,117 1122.16771,117 C962.190754,117 844.636121,266.258151 880.768067,421.202806 C674.896491,410.886582 492.324484,312.253414 370.089808,162.341063 C305.17308,273.705962 336.423691,419.391176 446.731805,493.16476 C406.171431,491.856361 367.925917,480.734968 334.561738,462.165765 C331.844294,576.95263 414.122472,684.342008 533.287442,708.245454 C498.413572,717.706186 460.218381,719.9204 421.368991,712.47259 C452.871217,810.904465 544.358512,882.514158 652.854997,884.52708 C548.686294,966.201382 417.443793,1002.68559 286,987.186091 C395.653915,1057.48739 525.940278,1098.50067 665.838342,1098.50067 C1125.89162,1098.50067 1385.81015,709.956437 1370.10936,361.469352 C1418.52012,326.494836 1460.53987,282.864756 1493.75308,233.195911 Z" id="bird">
+          </path>
+        </g>
+      </svg>
+
+      <div class="centered-left">
+        <h2><img src="http://i63.tinypic.com/acbki9.jpg" width="18px" alt="search"> Follow your interests.</h2>
+      
+        <h2><img src="http://i67.tinypic.com/vcqxjn.png" width="18px" alt="people">Hear what people are talking about.</h2>
+      
+        <h2><img src="http://i66.tinypic.com/2i0ujx5.png" width="18px" alt="conversation"> Join the conversation.</h2>
+      </div>
+    </div>
+
+    <div class="split right">
+      
+      <img id="right-bird" src="https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/300px-Twitter_Bird.svg.png" width="50px" alt="Twitter bird">
+
+      <div class="centered-right">
+        <div>
+          <h2>See what’s happening in<br> the world right now</h2>
+        </div>
+    
+        <p>Join Twitter today.</p>
+      
+        <input routerLink = "/signup" routerLinkActive = "active"type="button" class="login-button" value="Sign Up"><br>
+     
+        <input routerLink = "/login" routerLinkActive = "active"type="button" class="login-button" id="loginlast" value="Log in">
+      </div>
+    </div>
+
+    <footer>
+      <a class="footer-color" href="/about" rel="noopener">About</a>
+    
+      <span class="copy"><a class="footer-color" href="//support.twitter.com" rel="noopener">Help Center</a></span>
+    
+      <a class="footer-color" href="https://blog.twitter.com" rel="noopener">Blog</a>
+    
+      <a class="footer-color" href="/tos" rel="noopener">Terms</a>
+    
+      <span class="copy"><a class="footer-color" href="/privacy" rel="noopener">Privacy Policy</a></span>
+    
+      <span class="copy"><a class="footer-color" href="//business.twitter.com/en/help/troubleshooting/how-twitter-ads-work.html" rel="noopener">Ads info</a></span>
+    
+      <a class="footer-color" href="//about.twitter.com/press/brand-assets" rel="noopener">Brand</a>
+    
+      <a class="footer-color" href="https://about.twitter.com/products" rel="noopener">Apps</a>
+    
+      <a class="footer-color" href="//ads.twitter.com/?ref=gl-tw-tw-twitter-advertise" rel="noopener">Advertise</a>
+    
+      <a class="footer-color" href="https://marketing.twitter.com" rel="noopener">Marketing</a>
+    
+      <a class="footer-color" href="https://business.twitter.com" rel="noopener">Businesses</a>
+
+      
+      <a class="footer-color" href="/settings/personalization" rel="noopener">Settings</a>
+      
+      <span class="copy">2021 Twitter</span>
+    </footer>
+  </body>
+</html>

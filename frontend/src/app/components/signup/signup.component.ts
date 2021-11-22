@@ -43,6 +43,7 @@ export class SignupComponent implements OnInit {
       
   
   }
+  //onkey function
   onkey(event: any, type: string) {
     if (type === 'username') {
       this.username = event.target.value;

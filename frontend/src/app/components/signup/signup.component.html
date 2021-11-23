@@ -109,7 +109,7 @@
               <input type="password" class="form-control" required (keyup)="onkey($event, 'confirmPassword')" />
               <p *ngIf="!valid.password" class="text-red-500 text-xs italic">Passwords are different!</p>
             </div>
-            <button type="button" class="btn btn-custom btn-lg btn-block mt-3">
+            <button routerLink="/main" type="button" class="btn btn-custom btn-lg btn-block mt-3">
               Sign up
             </button>
           

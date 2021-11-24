@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Twitter Login Page </title>
+    <title>Twitter Login Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
@@ -88,31 +88,61 @@
         <div class="col-md-3"></div>
         <div class="col-md-6 p-0 pt-3">
           <i class="fa fa-twitter"></i>
-          <h3 class="text-center pt-3">Signup for Twitter </h3>
+          <h3 class="text-center pt-3">Signup for Twitter</h3>
           <form class="login-form" action="#">
             <div class="mb-3 bg-color">
               <label>Username</label>
-              <input type="text" class="form-control" required (keyup)="onkey($event, 'username')"/>
-              <p *ngIf="!valid.username" class="text-red-500 text-xs italic">Username can consist of letters and numbers only and the minimum length is 5!</p>
+              <input
+                type="text"
+                class="form-control"
+                required
+                (keyup)="onkey($event, 'username')"
+              />
+              <p *ngIf="!valid.username" class="text-red-500 text-xs italic">
+                Username can consist of letters and numbers only and the minimum
+                length is 5!
+              </p>
             </div>
             <div class="mb-3 bg-color">
-                <label>Email</label>
-                <input type="email" class="form-control" required (keyup)="onkey($event, 'email')" />
-                <p *ngIf="!valid.email" class="text-red-500 text-xs italic">Your email is not correct!</p>
-              </div>
-              <div class="mb-3 bg-color">
-                <label>Password</label>
-                <input type="password" class="form-control" required (keyup)="onkey($event, 'password')"/>
-              </div>  
+              <label>Email</label>
+              <input
+                type="email"
+                class="form-control"
+                required
+                (keyup)="onkey($event, 'email')"
+              />
+              <p *ngIf="!valid.email" class="text-red-500 text-xs italic">
+                Your email is not correct!
+              </p>
+            </div>
+            <div class="mb-3 bg-color">
+              <label>Password</label>
+              <input
+                type="password"
+                class="form-control"
+                required
+                (keyup)="onkey($event, 'password')"
+              />
+            </div>
             <div class="mb-3 bg-color">
               <label>Confirm Password</label>
-              <input type="password" class="form-control" required (keyup)="onkey($event, 'confirmPassword')" />
-              <p *ngIf="!valid.password" class="text-red-500 text-xs italic">Passwords are different!</p>
+              <input
+                type="password"
+                class="form-control"
+                required
+                (keyup)="onkey($event, 'confirmPassword')"
+              />
+              <p *ngIf="!valid.password" class="text-red-500 text-xs italic">
+                Passwords are different!
+              </p>
             </div>
-            <button routerLink="/main" type="button" class="btn btn-custom btn-lg btn-block mt-3">
+            <button
+              routerLink="/login"
+              type="button"
+              class="btn btn-custom btn-lg btn-block mt-3"
+            >
               Sign up
             </button>
-          
           </form>
         </div>
         <div class="col-md-3"></div>

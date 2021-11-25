@@ -7,7 +7,10 @@ namespace Repository
     //creating interface
     public interface IRegisterService
     {
-        //defining a method by default it is abstract
+        /// <summary>
+        /// defining all methods by default it is abstract
+        /// </summary>
+        
         public bool UserRegister(Register register);
 
         public List<string> GetTwitterUsers();

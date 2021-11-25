@@ -17,11 +17,13 @@ namespace Repository
         //creating constructor
         public RegisterService()
         {
+            //access the database connection
             sqlConnection = new SqlConnection(ApplicationContext.ConnectionStrings);
         }
         // database connection open  
         public void connectionOpen()
         {
+            //if the connection is closed then connection will be opened
             if (sqlConnection.State == System.Data.ConnectionState.Closed)
                 sqlConnection.Open();
 
@@ -29,78 +31,92 @@ namespace Repository
         //database connection closed 
         public void closedConnection()
         {
+            //if the connection is opened then connection will be closed
             if (sqlConnection.State == System.Data.ConnectionState.Open)
                 sqlConnection.Close();
         }
       
-        //implementing the abstract method 
+        //implementing the abstract method and passing parameter as a class
+        
         public bool UserRegister(Register register)
         {
             bool isSuccess = false;
+            //within try block we are writing the code and raise the exceptions
             try
             {
-
+               //inserting data into database by using sql server query
                 using (SqlCommand = new SqlCommand($"INSERT INTO Register VALUES ('" + register.UserName + "','" +
                   register.EmailID + "','" + register.Password + "','" + register.ConfirmPassword + "')", sqlConnection))
                 {
+                    //here opening the connection method called
                     connectionOpen();
-
+                    //executing the command
                     SqlCommand.ExecuteNonQuery();
                     isSuccess = true;
                 }
 
             }
-
+            //handling the execptions
             catch (Exception ex)
             {
                 throw new RegisterException(ex.Message);
             }
+            //exception will be raised or not this block will always executed
             finally
             {
+                //here closing the connection method called
                 closedConnection();
             }
            
             return isSuccess;
         }
+        //implementing the abstract method 
         public bool UserTweet(string data)
         {
             bool isSuccess = false;
+            //within try block we are writing the code and raise the exceptions
             try
             {
-
+                //inserting data into database by using sql server query
                 using (SqlCommand = new SqlCommand($"INSERT INTO TweetMessage VALUES ('" + data + "')", sqlConnection))
                 {
+                    //here opening the connection method called
                     connectionOpen();
-
+                    //executing the command
                     SqlCommand.ExecuteNonQuery();
                     isSuccess = true;
                 }
 
             }
-
+            //handling the execptions
             catch (Exception ex)
             {
                 throw new RegisterException(ex.Message);
             }
+            // exception will be raised or not this block will always executed
             finally
             {
+                //here closing the connection method called
                 closedConnection();
             }
 
             return isSuccess;
         }
+        //implementing the abstract method 
         public bool UserLogin(Login login)
         {
            bool isSuccess = false;
-
+            //within try block we are writing the code and raise the exceptions
             try
             {
+                //getting data into database by using sql server query
                 using (SqlCommand = new SqlCommand("SELECT * from Register where EmailId='"+ login.EmailID+"'", sqlConnection))
                 {
+                    //here opening the connection method called
                     connectionOpen();
-
+                    //executing the query
                     SqlDataReader reader = SqlCommand.ExecuteReader();
-
+                    //reading the data
                     while (reader.Read())
                     {
                         if (login.Password.Equals(reader[3]))
@@ -111,53 +127,68 @@ namespace Repository
                 }
                 
             }
+            //handling the execptions
             catch (Exception ex)
             {
                 throw new RegisterException(ex.Message);
             }
+            // exception will be raised or not this block will always executed
             finally
             {
+                //here closing the connection method called
                 closedConnection();
             }
             return isSuccess;
         }
-
+        //implementing the abstract method 
         public bool ChangePassword(ChangePassword changePassword)
         {
             bool isSuccess = false;
+            //within try block we are writing the code and raise the exceptions
             try
             {
+                //update the  data into database by using sql server query
                 using (SqlCommand = new SqlCommand($"UPDATE Register SET Password= '" + changePassword.Password + "',ConfirmPassword='" + changePassword.ConfirmPassword + "' WHERE  EmailId='" + changePassword.EmailID + "'", sqlConnection))
                 {
+                    //here opening the connection method called
                     connectionOpen();
+                    //executing the query
 
-                  SqlCommand.ExecuteNonQuery();
+                    SqlCommand.ExecuteNonQuery();
 
                     isSuccess = true;
                 }
             }
+            //handling the execptions
             catch (Exception ex)
             {
                 throw new RegisterException(ex.Message);
             }
+            // exception will be raised or not this block will always executed
             finally
             {
+                //here closing the connection method called
                 closedConnection();
             }
               return isSuccess;
         }
+        //implementing the abstract method 
         public List<string> GetTwitterUsers()
         {
+            //creating the list
               List<string> _students = new List<string>();
-          
+            //within try block we are writing the code and raise the exceptions
             try
             {
+                //getting data into database by using sql server query
                 using (SqlCommand = new SqlCommand("SELECT ID,UserName from Register where ID>0", sqlConnection))
                 {
+                    //here opening the connection method called
                     connectionOpen();
+                    //executing the query
 
                     SqlDataReader reader = SqlCommand.ExecuteReader();
-
+                    //reading the data
                     while (reader.Read())
                     {
                         _students.Add(reader.GetString(1));
@@ -166,18 +197,26 @@ namespace Repository
                   
                 }
             }
+            //handling the execptions
             catch (Exception ex)
             {
                 throw new RegisterException(ex.Message);
             }
+            // exception will be raised or not this block will always executed
             finally
             {
-                closedConnection();
+                //here closing the connection method called
             }
 
             return _students;
 
         }
+        /// <summary>
+        /// here implementing abstract method 
+        /// by using id we can delete record in database
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>record is deleted</returns>
         public bool DeleteUserAccount(int id)
         {
             bool isSuccess = false;
@@ -202,6 +241,12 @@ namespace Repository
             }
             return isSuccess;
         }
+        /// <summary>
+        /// here implementing abstract method 
+        /// by using username we can update record in database
+        /// </summary>
+        /// <param name="name"></param>
+        /// <returns>record is updated</returns>
         public bool UserNameUpdation(ChangeUser name)
         {
             bool isSuccess = false;
@@ -226,6 +271,12 @@ namespace Repository
             }
             return isSuccess;
         }
+        /// <summary>
+        /// implemeting abstarct method
+        /// return password by using email id 
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns>successfully getting password</returns>
         public string ForgetPassword(string email)
         {
             string password = "";
@@ -251,7 +302,11 @@ namespace Repository
             return password;
 
         }
-
+        /// <summary>
+        /// implemting the abstract method
+        /// getting image in table 
+        /// </summary>
+        /// <returns>it will return image</returns>
         public string ImageChange()
         {
 

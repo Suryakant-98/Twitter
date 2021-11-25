@@ -8,3 +8,13 @@ C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\netcoreapp3.1\DBCon
 C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\netcoreapp3.1\DBContext.csproj.CoreCompileInputs.cache
 C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\netcoreapp3.1\DBContext.dll
 C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\netcoreapp3.1\DBContext.pdb
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\bin\Debug\netcoreapp3.1\DBContext.deps.json
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\bin\Debug\netcoreapp3.1\DBContext.dll
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\bin\Debug\netcoreapp3.1\DBContext.pdb
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\obj\Debug\netcoreapp3.1\DBContext.csproj.AssemblyReference.cache
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\obj\Debug\netcoreapp3.1\DBContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\obj\Debug\netcoreapp3.1\DBContext.AssemblyInfoInputs.cache
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\obj\Debug\netcoreapp3.1\DBContext.AssemblyInfo.cs
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\obj\Debug\netcoreapp3.1\DBContext.csproj.CoreCompileInputs.cache
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\obj\Debug\netcoreapp3.1\DBContext.dll
+C:\Users\cbonthu\source\repos\Twitter\Backend\DBContext\obj\Debug\netcoreapp3.1\DBContext.pdb

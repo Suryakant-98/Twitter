@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "94x7DIV01yG9bHUn2gYBhsod3WOwj9InXKmfSrh9NqH3ht4cS2G3pIUC/ck/ucEekKGYpt/hmS3EYqu1HYk53Q==",
+  "dgSpecHash": "HIzGZKTbmVCUd6ItC5zsPMogFRyTzPSVCeuzwIeCP/VIQxyNA6Tx1YenKC78FG//gM3CQmO81CzrkvKBRqaSeg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\DBContext\\DBContext.csproj",
+  "projectFilePath": "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\DBContext\\DBContext.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

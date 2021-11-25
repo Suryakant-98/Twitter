@@ -17,6 +17,7 @@ namespace DBContext
         public string ConfirmPassword { get; set; }
        
     }
+   
     public class ChangePassword
     {
         public string EmailID { get; set; }

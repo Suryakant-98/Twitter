@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\Repository\\Repository.csproj",
+      "projectUniqueName": "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\Repository\\Repository.csproj",
+      "projectPath": "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\cbonthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\Repository\\obj\\",
+      "outputPath": "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\cbonthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -496,8 +496,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\DBContext\\DBContext.csproj": {
-              "projectPath": "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\DBContext\\DBContext.csproj"
+            "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\DBContext\\DBContext.csproj": {
+              "projectPath": "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\DBContext\\DBContext.csproj"
             }
           }
         }

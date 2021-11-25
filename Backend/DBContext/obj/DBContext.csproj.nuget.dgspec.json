@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\DBContext\\DBContext.csproj": {}
+    "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\DBContext\\DBContext.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\DBContext\\DBContext.csproj": {
+    "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\DBContext\\DBContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\DBContext\\DBContext.csproj",
+        "projectUniqueName": "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\DBContext\\DBContext.csproj",
         "projectName": "DBContext",
-        "projectPath": "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\DBContext\\DBContext.csproj",
+        "projectPath": "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\DBContext\\DBContext.csproj",
         "packagesPath": "C:\\Users\\cbonthu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cbonthu\\source\\repos\\TwitterAPI\\DBContext\\obj\\",
+        "outputPath": "C:\\Users\\cbonthu\\source\\repos\\Twitter\\Backend\\DBContext\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\cbonthu\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -16,7 +16,7 @@ namespace Repository
         public bool ChangePassword(ChangePassword changePassword);
         public bool DeleteUserAccount(int id);
         public bool UserNameUpdation(ChangeUser name);
-
+        public string ImageChange();
         public string ForgetPassword(string email);
     }
 }

@@ -3,6 +3,7 @@ using Repository.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace Repository
 {
@@ -251,6 +252,32 @@ namespace Repository
 
         }
 
+        public string ImageChange()
+        {
 
+            string image1 = "";
+            try
+            {
+
+                using (SqlCommand = new SqlCommand($"select * from  UploadProfile  ", sqlConnection))
+                {
+                    connectionOpen();
+                   
+                    image1 = Convert.ToString(SqlCommand.ExecuteScalar());
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                throw new RegisterException(ex.Message);
+            }
+            finally
+            {
+                closedConnection();
+            }
+
+            return image1;
+        }
     }
 }

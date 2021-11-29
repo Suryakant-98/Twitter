@@ -1,0 +1,12 @@
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\bin\Debug\net5.0\DBContext.deps.json
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\bin\Debug\net5.0\DBContext.dll
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\bin\Debug\net5.0\ref\DBContext.dll
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\bin\Debug\net5.0\DBContext.pdb
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\net5.0\DBContext.csproj.AssemblyReference.cache
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\net5.0\DBContext.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\net5.0\DBContext.AssemblyInfoInputs.cache
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\net5.0\DBContext.AssemblyInfo.cs
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\net5.0\DBContext.csproj.CoreCompileInputs.cache
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\net5.0\DBContext.dll
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\net5.0\ref\DBContext.dll
+C:\Users\cbonthu\source\repos\TwitterAPI\DBContext\obj\Debug\net5.0\DBContext.pdb

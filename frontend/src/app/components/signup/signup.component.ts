@@ -80,8 +80,9 @@ export class SignupComponent implements OnInit {
   Signup() {
     const formData = new FormData();
     formData.append("UserName",this.data.username)
-    formData.append("Emailid",this.data.email)
-    formData.append("CreatePassword",this.data.password)
+    formData.append("EmailId",this.data.email)
+    formData.append("Password",this.data.password)
+    formData.append("ConfirmPassword",this.data.confirmPassword)
    
  
  

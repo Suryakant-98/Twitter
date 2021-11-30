@@ -1,7 +1,7 @@
 export class UserModel{
     UserName!:string;
-    Emailid!: string;
-    CreatePassword!:string;
+    EmailId!: string;
+    Password!:string;
     ConfirmPassword!:string;
     
 
